@@ -12,3 +12,24 @@ function GamesSeasons() {
         alert("такого месяца не существует");
     }
 }
+
+function RememberWords() {
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    list = list.sort(() => Math.random() - 0.5);
+    alert(list); 
+    
+    const question = ('Чему равнялся первый элемент массива?');
+    const questionTwo = ('Чему равнялся последний элемент массива?')
+    
+    if (question.list[0] === 'Яблоко') {
+        console.log('Угадал');
+    } else {
+        console.log('Не угадал');
+    }
+    
+    if (questionTwo.list[list.length - 1] === 'Мандарин') {
+        console.log('Угадал');
+    } else {
+        console.log('Не угадал');
+    } 
+}
